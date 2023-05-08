@@ -278,7 +278,7 @@ void geser_kiri(){
   tibia[4].write(deg_servo(minServoTibia,4)); //A
   tibia[5].write(deg_servo(maxServoTibia,5)); //E  
   
-  delay(300);  z
+  delay(300);
   }
 
   
