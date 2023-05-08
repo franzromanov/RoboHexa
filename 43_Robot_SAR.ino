@@ -14,3 +14,6 @@ void loop(){
 //  geser_kiri();
 //  geser_kanan();
 }
+
+
+#kapan menang heheeee
