@@ -7,9 +7,9 @@
 #define SWING_TIBIA   16
 #define DUR           300
 
-const unsigned int offsetServoCoxa[6]={105,85,60,120,125,85}; //zero offset servo C,B,F,D,A,E (coxa C rusak)
-const unsigned int offsetServoFemur[6]={75,90,85,90,85,85};   //zero offset servo C,B,F,D,A,E (femur C rusak)
-const unsigned int offsetServoTibia[6]={55,90,80,90,90,80};   //zero offset servo C,B,F,D,A,E
+const unsigned int offsetServoCoxa[6]={120,90,90,120,90,90}; //zero offset servo C,B,F,D,A,E (coxa C rusak)
+const unsigned int offsetServoFemur[6]={75,90,85,90,90,85};   //zero offset servo C,B,F,D,A,E (femur C rusak)
+const unsigned int offsetServoTibia[6]={55,90,80,10,0,80};   //zero offset servo C,B,F,D,A,E
 
 int deg_servo(unsigned int* offset,unsigned int legNum);              //offset+sudut servo
 void init_servo();                                                    //fungsi inisialisasi pin servo
