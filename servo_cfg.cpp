@@ -3,7 +3,7 @@
 Servo coxa[6], femur[6], tibia[6]; // array servo coxa, femur, tibia
 unsigned int maxServoCoxa[6],maxServoFemur[6],maxServoTibia[6];
 unsigned int minServoCoxa[6],minServoFemur[6],minServoTibia[6];
-
+//pin 3 dan 31 jadi satu pin
 int deg_servo(unsigned int* offset,unsigned int legNum){
   return  (offset[legNum]);
 }
