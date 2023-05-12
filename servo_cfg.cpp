@@ -1,13 +1,23 @@
 #include "servo_cfg.h"
+Servo gripper1;
+Servo gripper2;
 
 Servo coxa[6], femur[6], tibia[6]; // array servo coxa, femur, tibia
 unsigned int maxServoCoxa[6],maxServoFemur[6],maxServoTibia[6];
 unsigned int minServoCoxa[6],minServoFemur[6],minServoTibia[6];
-//pin 3 dan 31 jadi satu pin
+
 int deg_servo(unsigned int* offset,unsigned int legNum){
   return  (offset[legNum]);
 }
+void init_gripper(){
+  gripper1.attach(4);
+  gripper2.attach(A11);
 
+}
+void gripper_move(){
+  gripper1.write(120);
+  gripper2.write(0);
+}
 void init_servo(){
   //define max dan min pos dari COXA, FEMUR, TIBIA
   for(int i=0;i<NUM_LEG;i++){
@@ -18,7 +28,7 @@ void init_servo(){
     maxServoTibia[i]= offsetServoTibia[i]+SWING_TIBIA;
     minServoTibia[i]= offsetServoTibia[i]-SWING_TIBIA;
   }
-
+  
   // mengatur pin servo coxa
   coxa[0].attach(8);        //C
   coxa[1].attach(18);       //B
@@ -31,7 +41,7 @@ void init_servo(){
   femur[0].attach(9);       //C
   femur[1].attach(2);       //B
   femur[2].attach(35);      //F
-  femur[3].attach(34);      //D
+  femur[3].attach(37);      //D
   femur[4].attach(31);      //A
   femur[5].attach(39);      //E
  
@@ -278,9 +288,5 @@ void geser_kiri(){
   tibia[4].write(deg_servo(minServoTibia,4)); //A
   tibia[5].write(deg_servo(maxServoTibia,5)); //E  
   
-  delay(300);
+  delay(300);  
   }
-
-
-
-  
