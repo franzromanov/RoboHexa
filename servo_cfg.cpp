@@ -82,7 +82,7 @@ void maju(){
   femur[1].write(deg_servo(offsetServoFemur,1)); //B
   femur[3].write(deg_servo(offsetServoFemur,3)); //D
   femur[2].write(deg_servo(offsetServoFemur,2)); //F
-  delay(300);
+  delay(1000);
 
   //A,C,E mundur stance
   coxa[0].write(deg_servo(maxServoCoxa,0)); //C
@@ -99,7 +99,7 @@ void maju(){
   femur[1].write(deg_servo(minServoFemur,1)); //B
   femur[3].write(deg_servo(minServoFemur,3)); //D
   femur[2].write(deg_servo(minServoFemur,2)); //F
-  delay(300);
+  delay(1000);
 }
 
 void mundur(){
@@ -135,7 +135,7 @@ void mundur(){
   femur[1].write(deg_servo(minServoFemur,1)); //B
   femur[3].write(deg_servo(minServoFemur,3)); //D
   femur[2].write(deg_servo(minServoFemur,2)); //F
-  delay(300);
+  delay(1000);
 }
 
 void putar_kanan(){  
@@ -172,7 +172,7 @@ void putar_kanan(){
   coxa[0].write(deg_servo(maxServoCoxa,0)); //C
   coxa[4].write(deg_servo(maxServoCoxa,4)); //A
   coxa[5].write(deg_servo(maxServoCoxa,5)); //E  
-  delay(300);
+  delay(1000);
  
 }
 
@@ -211,7 +211,7 @@ void putar_kiri(){
   coxa[4].write(deg_servo(minServoCoxa,4)); //A
   coxa[5].write(deg_servo(minServoCoxa,5)); //E
 
-  delay(300);  
+  delay(1000);  
   }
 
 void geser_kanan(){
@@ -270,7 +270,7 @@ void geser_kiri(){
   tibia[4].write(deg_servo(maxServoTibia,4)); //A
   tibia[5].write(deg_servo(minServoTibia,5)); //E
 
-  delay(300);
+  delay(1000);
   
   //B,D,F maju swing  
   femur[1].write(deg_servo(maxServoFemur,1)); //B
@@ -288,5 +288,5 @@ void geser_kiri(){
   tibia[4].write(deg_servo(minServoTibia,4)); //A
   tibia[5].write(deg_servo(maxServoTibia,5)); //E  
   
-  delay(300);  
+  delay(1000);  
   }
