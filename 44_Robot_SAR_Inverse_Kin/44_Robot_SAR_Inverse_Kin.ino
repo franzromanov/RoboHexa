@@ -8,8 +8,6 @@ float cj0[3],cj1[3],cm0[3],cm1[3];
 float tethaA[3],tethaB[3];
 int betaA[3],betaB[3];
 
-
-
 Servo coxa[6], femur[6], tibia[6]; // array servo coxa, femur, tibia
 
 void init_servo(){  
